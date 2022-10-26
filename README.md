@@ -40,7 +40,7 @@ INSERT INTO pessoas (pessoaid, pessoaNome, pessoaSobrenome) values (3,"Juan","No
 SELECT * FROM pessoas; /* o Select é para mostrar os atributos selecionados da tabela , no caso aqui é selecionado o ( * ) que é para mostrar todos os atributos da tabela */
 SELECT * FROM pessoas WHERE pessoaid = 1; /* WHERE é para colocar o parametro do atributo, e encontrar todos os dados de acordo na tabela */
 
-DELETE FROM pessoas /* Não recomendando utilizar! , ele deleta a tabela! */
+DELETE FROM pessoas WHERE pessoaid = 3; /* o DELETE ele deleta a tabela! */
 
 /* ALTER para fazer alteração na tabela caso precise fazer */
 
