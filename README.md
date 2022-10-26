@@ -23,6 +23,7 @@ SELECT * FROM pessoas WHERE pessoaid = 1;
 <hr>
 <h3> Com Comentários: </h3>
 <br>
+
 ~~~mysql
 create database senai; /* criando um banco de dados (use Crtl + Enter em cada linha) */
 use senai; 
