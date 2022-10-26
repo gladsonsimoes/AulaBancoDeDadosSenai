@@ -5,6 +5,12 @@
 
 ![image](https://user-images.githubusercontent.com/99969693/198150144-2fb6d715-9c97-43a3-afea-d7604a05224a.png)
 
+~~~mysql
+-- comentário 1
+# comentário 2
+/* comentário 3 */
+~~~
+
 <hr>
 <h3> Sem Comentários: </h3>
 <br>
@@ -33,5 +39,19 @@ INSERT INTO pessoas (pessoaid, pessoaNome, pessoaSobrenome) values (2,"Gladson",
 INSERT INTO pessoas (pessoaid, pessoaNome, pessoaSobrenome) values (3,"Juan","Novais");
 SELECT * FROM pessoas; /* o Select é para mostrar os atributos selecionados da tabela , no caso aqui é selecionado o ( * ) que é para mostrar todos os atributos da tabela */
 SELECT * FROM pessoas WHERE pessoaid = 1; /* WHERE é para colocar o parametro do atributo, e encontrar todos os dados de acordo na tabela */
+
+DELETE FROM pessoas /* Não recomendando utilizar! , ele deleta a tabela! */
+
+/* ALTER para fazer alteração na tabela caso precise fazer */
+
+ALTER  TABLE pessoas add apelido varchar(255); # adicionar a tabela apelido
+
+ALTER TABLE pessoas drop apelido; # deletar somente a tabela apelido
+
+show database; #ver todas as databases criadas
+ 
+drop database senai2; #comando perigoso pra deletar o database
+
+
 ~~~
 
