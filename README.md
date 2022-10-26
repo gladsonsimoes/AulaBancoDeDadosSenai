@@ -26,7 +26,7 @@ SELECT * FROM pessoas WHERE pessoaid = 1;
 
 ~~~mysql
 create database senai; /* criando um banco de dados (use Crtl + Enter em cada linha) */
-use senai; 
+use senai; /* é para acessar o database e criar coisa nele (no caso estou usando o database senai se eu quiser  usar outra database eu tenho que usar o use) */
 CREATE TABLE pessoas (pessoaid int, pessoaNome varchar(255), pessoaSobrenome varchar(255)); /* criando uma tabela pessoas e seus atributos */
 INSERT INTO pessoas (pessoaid, pessoaNome, pessoaSobrenome) values (1,"Ramon","Nascimento"); /* inserindo na tabela pessoas a pessoa Ramon e seus atributos */
 INSERT INTO pessoas (pessoaid, pessoaNome, pessoaSobrenome) values (2,"Gladson","Simões"); 
