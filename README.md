@@ -6,7 +6,8 @@
 ![image](https://user-images.githubusercontent.com/99969693/198150144-2fb6d715-9c97-43a3-afea-d7604a05224a.png)
 
 <hr>
-Sem Comentários:
+<h3> Sem Comentários: </h3>
+<br>
 
 ~~~mysql
 create database senai;
@@ -20,8 +21,8 @@ SELECT * FROM pessoas WHERE pessoaid = 1;
 ~~~
 
 <hr>
-Com Comentários:
-
+<h3> Com Comentários: </h3>
+<br>
 ~~~mysql
 create database senai; /* criando um banco de dados (use Crtl + Enter em cada linha) */
 use senai; 
