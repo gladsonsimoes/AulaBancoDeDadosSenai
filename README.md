@@ -60,6 +60,14 @@ show database;
 -- deletando o database senai2! COMANDO PERIGOSO!
 drop database senai2; 
 
+-- deletando a tabela pessoas
+drop table pessoa;
+
+-- alterar todos os nomes
+UPDATE pessoa SET pessoaNome = "Marcos"; 
+
+-- alterar somente o nome do id 1 
+UPDATE pessoa SET pessoaNome = "Marcos" WHERE pessoaid = 1;
 
 ~~~
 
