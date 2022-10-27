@@ -89,6 +89,6 @@ UPDATE pessoa SET funcID = 3 WHERE pessoaID = 1;
 UPDATE pessoa SET funcID = 2 WHERE pessoaID = 2;
 
 -- funcao para selecionar somente as tabelas que queira visualizar
-select pessoa.pessoaNome from pessoa join funcao on pessoa.funcao
+select pessoa.pessoaNome, funcao.funcao from pessoa join funcao on pessoa.funcID = funcao.funcID;
 ~~~
 
