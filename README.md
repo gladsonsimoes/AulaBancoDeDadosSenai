@@ -60,17 +60,34 @@ ALTER TABLE pessoas drop apelido; # deletar somente a tabela apelido
 -- ver todas as databases criadas
 show database; 
  
--- deletando o database senai2! COMANDO PERIGOSO!
+-- deletando o database senai2! - NÃO RECOMENDAVEL 
 drop database senai2; 
 
--- deletando a tabela pessoas
+-- deletando a tabela pessoas - NÃO RECOMENDAVEL
 drop table pessoa;
 
--- alterar todos os nomes
+-- alterar todos os nomes para Marcos -  NÃO RECOMENDAVEL
 UPDATE pessoa SET pessoaNome = "Marcos"; 
 
 -- alterar somente o nome do id 1 
 UPDATE pessoa SET pessoaNome = "Marcos" WHERE pessoaid = 1;
+
+-- Criando tabela função
+create table funcao (funcID int, funcao varchar(255));
+INSERT INTO funcao (funcID, funcao) VALUES (1,"BACKEND");
+INSERT INTO funcao (funcID, funcao) VALUES (2,"FRONTEND");
+
+-- Selecionando ela
+select * from funcao;
+
+-- Alterando tabela
+alter table pessoa add funcId varchar(255);
+
+-- alterando funcao (funcID) da tabela pessoas (pessoaID)
+UPDATE pessoa SET funcID = 1 WHERE pessoaID = 1;
+UPDATE pessoa SET funcID = 3 WHERE pessoaID = 1;
+UPDATE pessoa SET funcID = 2 WHERE pessoaID = 2;
+
 
 ~~~
 
