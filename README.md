@@ -149,7 +149,7 @@ UPDATE pessoa SET funcID = 2 WHERE pessoaid = 2;
 select pessoa.pessoaNome, funcao.funcao from pessoa join funcao on pessoa.funcID = funcao.funcID;
 ~~~
 
-
+~~~mysql
 create database exercicio1;
 use exercicio1;
 create table clientes ( CPF varchar(50), nomeCliente varchar(255), dataDeNascimento varchar(20), endereco varchar(200), CEP varchar(20), bairro varchar(50), cidade varchar(50), estado varchar(2));
@@ -160,3 +160,4 @@ insert into clientes (CPF, nomeCliente, dataDeNascimento, endereco, CEP, bairro,
 select * from clientes where cidade = "Rio de Janeiro";
 delete from clientes where cidade = "Londrina";
 select * from clientes;
+~~~
