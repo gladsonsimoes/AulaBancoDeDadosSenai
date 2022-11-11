@@ -155,6 +155,8 @@ create database normalizacao;
 
 use normalizacao;
 
+-- int not null --> o not null do int é para inofrmar que o valor não pode ser nulo
+-- primary key
 create table project (projectid int not null auto_increment primary key, projectcode varchar(255), projectname varchar(255), projetmanager varchar(255), projectbudget int);
 
 INSERT INTO project (projectid, projectcode, projectname, projetmanager, projectbudget) values (1, "PC010","Reservation System","Mr ajay", 120500);
