@@ -55,3 +55,5 @@ $conn = null;
 echo "</table>";
 ?>
 ~~~
+
+troquei (SELECT id, firstname, lastname FROM MyGuests) para ( SELECT departament_no, departament_name FROM departament )
