@@ -14,9 +14,8 @@
 /* comentário 3 */
 ~~~
 
-<hr>
-<h3> Sem Comentários: </h3>
-<br>
+
+### Sem Comentários: 
 
 ~~~mysql
 create database senai;
@@ -29,9 +28,8 @@ SELECT * FROM pessoas;
 SELECT * FROM pessoas WHERE pessoaid = 1;
 ~~~
 
-<hr>
-<h3> Com Comentários: </h3>
-<br>
+
+### Com Comentários: 
 
 ~~~mysql
 create database senai; /* criando um banco de dados (use Crtl + Enter em cada linha) */
@@ -150,7 +148,7 @@ select pessoa.pessoaNome, funcao.funcao from pessoa join funcao on pessoa.funcID
 ~~~
 
 
-//Normalização
+## Normalização
 
 ~~~mysql
 create database normalizacao;
@@ -188,7 +186,7 @@ insert into departament (departamentid, departamentno, dapartamentname) values (
 select * from departament;
 ~~~
 
-//relação entre tabelas
+## relação entre tabelas
 
 ~~~mysql
 Create database normalizacao1;
