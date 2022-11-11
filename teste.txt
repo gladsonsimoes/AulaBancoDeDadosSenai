@@ -1,0 +1,35 @@
+Normalizaçao 
+	
+	Codigo do Projeto
+	Nome do Projeto
+	Gestor do Projeto
+	Orçamento do Projeto
+	N° do Empregado
+	Nome do Empregado
+	N° do Departamento
+	Taxa Horaria
+
+
+    Projeto {
+        id_projeto
+        id_gestor
+        nome_projeto
+        orcamento_projeto
+    }
+
+    Empregado {
+        id_empregado
+        id_projeto
+        nome_empregado
+    }
+
+    Gestor {
+        id_gestor
+        nome_gestor
+        id_departamento
+        id_projeto
+    }
+
+    Departamento {
+        id_departamento
+    }
