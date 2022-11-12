@@ -70,3 +70,5 @@ INSERT INTO  project_employeeno_departmentid (projectid, employeenoid, departmen
 (012,137, 03), 
 (012,218, 02),
 (012,109, 01);
+
+select * from  project_employeeno_departmentid;
