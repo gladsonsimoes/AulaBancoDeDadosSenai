@@ -32,7 +32,12 @@ insert into department ( departmentid, dapartmentname) values
 ( 02, "Testing"),
 ( 03, "Database");
   
-CREATE TABLE employeeno (employeenoid INT(5) UNSIGNED NOT NULL AUTO_INCREMENT, employeename varchar(255), hourlyrate float, PRIMARY KEY(employeenoid));
+CREATE TABLE employeeno 
+(employeenoid INT(5) 
+UNSIGNED NOT NULL AUTO_INCREMENT, 
+employeename varchar(255),
+hourlyrate float,
+PRIMARY KEY(employeenoid));
 
 insert into employeeno (employeenoid, employeename, hourlyrate) values
 ( 100,"Mohan", 21.00),
