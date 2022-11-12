@@ -57,3 +57,10 @@ echo "</table>";
 ~~~
 
 troquei (SELECT id, firstname, lastname FROM MyGuests) para ( SELECT departament_no, departament_name FROM departament )
+
+![Captura de Tela (4)](https://user-images.githubusercontent.com/99969693/201447553-9f44aec7-4c87-442d-8132-a2f96c700723.png)
+![Captura de Tela (1)](https://user-images.githubusercontent.com/99969693/201447559-831dd4eb-903f-414e-93a6-d71bde0b0551.png)
+![Captura de Tela (2)](https://user-images.githubusercontent.com/99969693/201447565-ea014662-6776-4cad-a263-f3bbcdd0c66c.png)
+![Captura de Tela (3)](https://user-images.githubusercontent.com/99969693/201447566-ae6b48ba-0254-4c04-b7a0-91b4b73e744d.png)
+
+
