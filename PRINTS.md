@@ -6,7 +6,7 @@
 
 site do link abaixo: https://www.w3schools.com/php/php_mysql_select.asp
 
-colocar dentro da pasta root:
+colocar dentro da pasta root (UsbWebServer):
 
 ~~~php
 Example (PDO)
