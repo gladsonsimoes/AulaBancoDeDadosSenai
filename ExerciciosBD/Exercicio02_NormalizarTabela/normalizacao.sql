@@ -2,16 +2,16 @@ Create database normalizacao;
 
 use normalizacao;
 
-CREATE TABLE project
+CREATE TABLE projec
 (projectid INT(5) UNSIGNED NOT NULL AUTO_INCREMENT,
 projectname varchar(255) NOT NULL, 
 projetmanager varchar(255) , 
 projectbudget int,
+PRIMARY KEY(projectid)
+);
 
-PRIMARY KEY(projectid));
-
-INSERT INTO project
-(projectid, 
+INSERT INTO project(
+projectid, 
 projetmanager, 
 projectname,
 projectbudget)
@@ -20,12 +20,14 @@ projectbudget)
 (011, 'HR System',"Mrs. Charu", 500500),
 (012, 'Attendance System',"Mr Rajesh", 710700);
 
-CREATE TABLE department
-(departmentid INT(5) UNSIGNED NOT NULL AUTO_INCREMENT, 
+CREATE TABLE department(
+departmentid INT(5) UNSIGNED NOT NULL AUTO_INCREMENT, 
 dapartmentname varchar(255),
-PRIMARY KEY(departmentid));
+PRIMARY KEY(departmentid)
+);
 
-insert into department ( departmentid, dapartmentname) values
+insert into department (
+departmentid, dapartmentname) values
 ( 01, "IT"),
 ( 02, "Testing"),
 ( 03, "Database");
