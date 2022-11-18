@@ -5,7 +5,13 @@
  </div>
  
 <br>
-<h1 align="center"> MYSQL </h1>
+<div>
+   <h1> MYSQL <img 
+    align="right"
+    width="50px" 
+    src="https://user-images.githubusercontent.com/99969693/202800806-e9f72f86-3528-4824-9a63-3788cad38ecf.png"></h1>
+    
+</div>
 
 
 
