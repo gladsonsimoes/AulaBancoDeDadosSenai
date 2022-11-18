@@ -14,23 +14,34 @@
 </div>
 
 
-
+## Adicionar Comentário
 ~~~mysql
 -- comentário 1
 # comentário 2
 /* comentário 3 */
 ~~~
 
-
-### Sem Comentários: 
+## Criar Banco de Dados
 
 ~~~mysql
-create database senai;
-use senai; 
-CREATE TABLE pessoas (pessoaid int, pessoaNome varchar(255), pessoaSobrenome varchar(255));
+create database nomeDoBancoDeDados;
+~~~
+
+## Acessar o banco de dados, para criar coisas dentro
+
+~~~mysql
+use nomeDoBancoDeDados;
+~~~
+
+## Criar Tabela e adicionar atributos
+
+~~~mysql
+CREATE TABLE nomeDaTabela (atributo varchar(20));
+~~~
+
+~~~
+-- Inserir Informação dentro da tabela
 INSERT INTO pessoas (pessoaid, pessoaNome, pessoaSobrenome) values (1,"Ramon","Nascimento"); 
-INSERT INTO pessoas (pessoaid, pessoaNome, pessoaSobrenome) values (2,"Gladson","Simões"); 
-INSERT INTO pessoas (pessoaid, pessoaNome, pessoaSobrenome) values (3,"Juan","Novais");
 SELECT * FROM pessoas;
 SELECT * FROM pessoas WHERE pessoaid = 1;
 ~~~
