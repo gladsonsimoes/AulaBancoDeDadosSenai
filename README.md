@@ -1,8 +1,9 @@
 # 1 - Aula Banco de dados
-
-<a href="https://github.com/gladsonsimoes/AulaBancoDeDadosSenai/blob/main/imagensReferencias/imagens.md"> imagens para referencia </a>
-<a href=""> SriptComAnotação </a>
-
+ <div>
+   <a href="https://github.com/gladsonsimoes/AulaBancoDeDadosSenai/blob/main/imagensReferencias/imagens.md"> imagens para referencia </a> | 
+   <a href=""> SriptComAnotação </a>
+ </div>
+ 
 <br>
 <h1 align="center"> MYSQL </h1>
 
