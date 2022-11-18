@@ -8,7 +8,6 @@
 <h1 align="center"> MYSQL </h1>
 
 
-![image](https://user-images.githubusercontent.com/99969693/198150144-2fb6d715-9c97-43a3-afea-d7604a05224a.png)
 
 ~~~mysql
 -- comentário 1
