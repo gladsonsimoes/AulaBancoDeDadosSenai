@@ -21,37 +21,39 @@
 /* comentário 3 */
 ~~~
 
-## Criar Banco de Dados
+### Criar Banco de Dados
 
 ~~~mysql
 create database nomeDoBancoDeDados;
 ~~~
 
-## Acessar o banco de dados, para criar coisas dentro
+### Acessar o banco de dados, para criar coisas dentro
 
 ~~~mysql
 use nomeDoBancoDeDados;
 ~~~
 
-## Criar Tabela e adicionar atributos
+### Criar Tabela e adicionar atributos
 
 ~~~mysql
-CREATE TABLE nomeDaTabela (atributo varchar(20));
+CREATE TABLE nomeDaTabela (nomeDoAtributo varchar(20));
 ~~~
 
-~~~
--- Inserir Informação dentro da tabela
-INSERT INTO pessoas (pessoaid, pessoaNome, pessoaSobrenome) values (1,"Ramon","Nascimento"); 
-SELECT * FROM pessoas;
-SELECT * FROM pessoas WHERE pessoaid = 1;
+### Colocar chave primária em uma tabela
+
+~~~mysql
 ~~~
 
+### Inserir valores na tabela
 
-### Com Comentários: 
+~~~mysql
+INSERT INTO nomeDaTabela (nomeDoAtributo) values ("valorDoAtributo");
+~~~
 
+## Selecionar Todas as Tabelas
 
-
-## relação entre tabelas
+~~~mysql
+~~~
 
 
 
