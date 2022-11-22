@@ -10,15 +10,8 @@ projectbudget int,
 PRIMARY KEY(projectid)
 );
 
-INSERT INTO project(
-projectid, 
-projetmanager, 
-projectname,
-projectbudget)
- VALUES 
-(010, 'Reservation System', "Mr ajay", 120500), 
-(011, 'HR System',"Mrs. Charu", 500500),
-(012, 'Attendance System',"Mr Rajesh", 710700);
+INSERT INTO project(projectid, projetmanager, projectname, projectbudget)
+ VALUES  (010, 'Reservation System', "Mr ajay", 120500), (011, 'HR System',"Mrs. Charu", 500500), (012, 'Attendance System',"Mr Rajesh", 710700);
 
 CREATE TABLE department(
 departmentid INT(5) UNSIGNED NOT NULL AUTO_INCREMENT, 
