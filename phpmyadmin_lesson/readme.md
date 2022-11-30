@@ -1,6 +1,6 @@
 
 ~~~mysql
-create database db_curos_gladson;
+create database db_curso_gladson;
 ~~~
 
 ~~~mysql
