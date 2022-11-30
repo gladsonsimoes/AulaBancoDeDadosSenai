@@ -17,3 +17,11 @@ rename table tb_cursos to tb_cursos_senai;
 ~~~sql
 alter table tb_cursos_senai add carga_horaria varchar(5) not null;
 ~~~
+
+~~~sql
+alter table tb_cursos_senai CHANGE carga_horaria carga_horarias int(5); -- sempre informar o atributo 
+~~~
+
+~~~sql
+alter table tb_cursos_senai CHANGE carga_horarias carga_horaria int(5); -- sempre informar o atributo 
+~~~
