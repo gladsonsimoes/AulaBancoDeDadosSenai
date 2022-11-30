@@ -19,11 +19,11 @@ alter table tb_cursos_senai add carga_horaria varchar(5) not null;
 ~~~
 
 ~~~sql
-alter table tb_cursos_senai change carga_horaria carga_horarias int(5); -- sempre informar o atributo 
+alter table tb_cursos_senai change carga_horaria carga_horarias int(5); -- sempre informar o atributo quando for alterar a coluna da tabela
 ~~~
 
 ~~~sql
-alter table tb_cursos_senai change carga_horarias carga_horaria int(5); -- sempre informar o atributo 
+alter table tb_cursos_senai change carga_horarias carga_horaria int(5); -- sempre informar o atributo quando for alterar a coluna da tabela
 ~~~
 
 ~~~sql
