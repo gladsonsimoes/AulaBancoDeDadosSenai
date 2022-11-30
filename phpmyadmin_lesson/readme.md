@@ -159,7 +159,7 @@ values (
 );
 ~~~
 
-### fazendo alteração dos atributos da tabela
+## fazendo alteração dos atributos da tabela
 
 ~~~mysql
 update tb_cursos_senai set (aqui você coloca a alteração) where (de onde que você quer alterar) 
