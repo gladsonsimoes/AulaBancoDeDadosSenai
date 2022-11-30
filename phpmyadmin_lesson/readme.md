@@ -76,7 +76,7 @@ INSERT into tb_cursos_senai (
 )
     
 values (
-        1,
+        2,
         "img/css.png",
         "CSS",
          null,
@@ -100,7 +100,7 @@ INSERT into tb_cursos_senai (
 )
     
 values (
-        1,
+        3,
         "img/js.png",
         "Javascript",
          null,
@@ -124,7 +124,7 @@ INSERT into tb_cursos_senai (
 )
     
 values (
-        1,
+        4,
         "img/php.png",
         "php",
          null,
@@ -148,13 +148,13 @@ INSERT into tb_cursos_senai (
 )
     
 values (
-        1,
-        "img/php.png",
-        "php",
+        5,
+        "img/ideacao.png",
+        "Ideação",
          null,
         "2022-11-30 20:28:20",
         true,
         0,
-        60
+        40
 );
 ~~~
