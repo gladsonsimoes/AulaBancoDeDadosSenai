@@ -158,3 +158,8 @@ values (
         40
 );
 ~~~
+
+~~~~mysql
+update tb_cursos_senai set id_curso = 2 where nome_curso = "CSS"
+~~~
+
