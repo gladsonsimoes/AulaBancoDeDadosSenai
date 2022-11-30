@@ -1,3 +1,8 @@
+
+~~~mysql
+create database db_curos_gladson;
+~~~
+
 ~~~mysql
 create table tb_cursos (
       id_curso int not null,
