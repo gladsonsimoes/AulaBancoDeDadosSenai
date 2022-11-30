@@ -159,7 +159,15 @@ values (
 );
 ~~~
 
-~~~~mysql
-update tb_cursos_senai set id_curso = 2 where nome_curso = "CSS"
+### fazendo alteração dos atributos da tabela
+
+~~~mysql
+update tb_cursos_senai set (aqui você coloca a alteração) where (de onde que você quer alterar) 
+~~~
+
+#### exemplo: 
+
+~~~mysql
+update tb_cursos_senai set id_curso = 2 where nome_curso = "CSS"  
 ~~~
 
