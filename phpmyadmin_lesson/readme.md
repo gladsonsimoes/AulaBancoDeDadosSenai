@@ -111,7 +111,7 @@ values (
 );
 ~~~
 
-
+~~~mysql
 INSERT into tb_cursos_senai (
     id_curso,
     imagem_curso,
@@ -133,3 +133,28 @@ values (
         0,
         60
 );
+~~~
+
+~~~mysql
+INSERT into tb_cursos_senai (
+    id_curso,
+    imagem_curso,
+    nome_Curso,
+    resumo,
+    data_cadastro,
+    ativo,
+    investimento,
+    carga_horaria
+)
+    
+values (
+        1,
+        "img/php.png",
+        "php",
+         null,
+        "2022-11-30 20:28:20",
+        true,
+        0,
+        60
+);
+~~~
