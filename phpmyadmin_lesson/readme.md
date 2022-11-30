@@ -54,7 +54,7 @@ INSERT into tb_cursos_senai (
 values (
         1,
         "img/logo.png",
-        "HTMl",
+        "HTML",
          null,
         "2022-11-30 19:53:20",
         true,
