@@ -62,3 +62,27 @@ values (
         100,
      )
 ~~~
+
+~~~~mysql
+INSERT into tb_cursos_senai (
+    id_curso,
+    imagem_curso,
+    nome_Curso,
+    resumo,
+    data_cadastro,
+    ativo,
+    investimento,
+    carga_horaria
+)
+    
+values (
+        1,
+        "img/css.png",
+        "CSS",
+         null,
+        "2022-11-30 19:57:20",
+        true,
+        0,
+        80,
+);
+~~~
