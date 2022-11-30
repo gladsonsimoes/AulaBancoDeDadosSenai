@@ -63,7 +63,7 @@ values (
      )
 ~~~
 
-~~~~mysql
+~~~mysql
 INSERT into tb_cursos_senai (
     id_curso,
     imagem_curso,
