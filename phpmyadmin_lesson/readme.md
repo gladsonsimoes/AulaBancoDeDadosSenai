@@ -25,3 +25,7 @@ alter table tb_cursos_senai change carga_horaria carga_horarias int(5); -- sempr
 ~~~sql
 alter table tb_cursos_senai change carga_horarias carga_horaria int(5); -- sempre informar o atributo 
 ~~~
+
+~~~sql
+alter table tb_cursos_senai drop carga_horaria;
+~~~
