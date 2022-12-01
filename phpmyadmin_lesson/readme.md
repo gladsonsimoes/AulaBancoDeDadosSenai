@@ -162,7 +162,7 @@ values (
 ## fazendo alteração dos atributos da tabela
 
 ~~~mysql
-update tb_cursos_senai set (aqui você coloca a alteração) where (de onde que você quer alterar) 
+update (a tabela que vai dar update) set (aqui você coloca a alteração) where (de onde que você quer alterar) 
 ~~~
 
 #### exemplo: 
