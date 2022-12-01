@@ -178,3 +178,7 @@ https://www.devmedia.com.br/forum/mysql-como-alterar-ordem-coluna/555770
 ~~~mysql
 select * from tb_cursos_senai order by id_curso;
 ~~~
+
+~~~mysql
+select * from tb_cursos_senai order by id_curso desc;
+~~~
