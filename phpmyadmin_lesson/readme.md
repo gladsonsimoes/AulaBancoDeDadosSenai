@@ -174,3 +174,7 @@ update tb_cursos_senai set id_curso = 2 where nome_curso = "CSS"
 ### como alterar ordem do banco de dados(ainda vou ver com calma!)
 
 https://www.devmedia.com.br/forum/mysql-como-alterar-ordem-coluna/555770
+
+~~~mysql
+select * from tb_cursos_senai order by id_curso;
+~~~
