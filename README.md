@@ -41,6 +41,15 @@ CREATE TABLE nomeDaTabela (
 );
 ~~~
 
+### deixar o atributo não receber nulo
+
+~~~mysql
+create table funcionario (
+      nome_func varchar (30) not null, -- o funcionario não pode ser nulo
+      sobrenome_func varchar (50) not null -- o sobrenome não pode ser nulo
+);  
+~~~
+
 ### Inserir valores na tabela
 
 ~~~mysql
@@ -61,6 +70,9 @@ create table exemplo (
 alter table uc add constraint fk_curso foreign key (id_curso)
 references curso (id_curso); 
 ~~~
+
+
+
 
 
 https://www.devmedia.com.br/sql-aprenda-a-utilizar-a-chave-primaria-e-a-chave-estrangeira/37636
