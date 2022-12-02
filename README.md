@@ -41,6 +41,12 @@ CREATE TABLE nomeDaTabela (
 );
 ~~~
 
+### Inserir valores na tabela
+
+~~~mysql
+INSERT INTO nomeDaTabela (nomeDoAtributo) values ("valorDoAtributo");
+~~~
+
 ### Colocar chave primária em uma tabela 
 
 ~~~mysql
@@ -49,15 +55,11 @@ create table exemplo (
 );
 ~~~
 
-### Inserir valores na tabela
+### 
 
 ~~~mysql
-INSERT INTO nomeDaTabela (nomeDoAtributo) values ("valorDoAtributo");
-~~~
-
-## Selecionar Todas as Tabelas
-
-~~~mysql
+alter table uc add constraint fk_curso foreign key (id_curso)
+references curso (id_curso); 
 ~~~
 
 
