@@ -36,7 +36,9 @@ use nomeDoBancoDeDados;
 ### Criar Tabela e adicionar atributos
 
 ~~~mysql
-CREATE TABLE nomeDaTabela (nomeDoAtributo varchar(20));
+CREATE TABLE nomeDaTabela (
+   nomeDoAtributo varchar(20)
+);
 ~~~
 
 ### Colocar chave primária em uma tabela 
