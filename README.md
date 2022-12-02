@@ -40,6 +40,7 @@ CREATE TABLE nomeDaTabela (
    nomeDoAtributo varchar(20)
 );
 ~~~
+<a href=""> tipos de atributo </a>
 
 ### deixar o atributo não receber nulo
 
