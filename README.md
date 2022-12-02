@@ -40,7 +40,7 @@ CREATE TABLE nomeDaTabela (
    nomeDoAtributo varchar(20)
 );
 ~~~
-<a href="https://cooperati.com.br/2012/09/mysql-srie-de-posts-3-tipos-de-dados-data-types/"> tipos de atributo </a>
+<a href="https://cooperati.com.br/2012/09/mysql-srie-de-posts-3-tipos-de-dados-data-types/"> tipos de dados do atributo </a>
 
 ### deixar o atributo não receber nulo
 
