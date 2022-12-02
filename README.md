@@ -39,9 +39,12 @@ use nomeDoBancoDeDados;
 CREATE TABLE nomeDaTabela (nomeDoAtributo varchar(20));
 ~~~
 
-### Colocar chave primária em uma tabela
+### Colocar chave primária em uma tabela 
 
 ~~~mysql
+create table exemplo (
+  id_exemplo int auto_increment primary key
+);
 ~~~
 
 ### Inserir valores na tabela
