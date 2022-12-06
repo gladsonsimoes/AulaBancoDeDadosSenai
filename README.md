@@ -65,7 +65,7 @@ create table exemplo (
 );
 ~~~
 
-### 
+### colocar uma regra para a chave estrangeira
 
 ~~~mysql
 alter table uc add constraint fk_curso foreign key (id_curso)
