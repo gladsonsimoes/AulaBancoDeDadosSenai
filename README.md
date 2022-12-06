@@ -81,3 +81,6 @@ https://www.devmedia.com.br/sql-aprenda-a-utilizar-a-chave-primaria-e-a-chave-es
 
 https://imasters.com.br/banco-de-dados/chave-primaria-nao-e-opcional#:~:text=Independente%20do%20cargo%20que%20voc%C3%AA,modelo%20de%20banco%20de%20dados.
 
+
+,,,
+
