@@ -73,8 +73,13 @@ references curso (id_curso);
 ~~~
 
 #### Constraint – Constraint é um objeto usado com a finalidade de colocar regras referentes à integridade e à consistência nas colunas das tabelas.
+#### foreign key - chave estrangeira ou chave externa se refere ao tipo de relacionamento entre distintas tabelas de dados
 
 
+
+
+## Algumas fontes para estudos:
+<hr>
 
 https://www.devmedia.com.br/sql-aprenda-a-utilizar-a-chave-primaria-e-a-chave-estrangeira/37636
 
