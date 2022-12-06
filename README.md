@@ -72,7 +72,7 @@ alter table uc add constraint fk_curso foreign key (id_curso)
 references curso (id_curso); 
 ~~~
 
-
+#### Constraint – Constraint é um objeto usado com a finalidade de colocar regras referentes à integridade e à consistência nas colunas das tabelas.
 
 
 
