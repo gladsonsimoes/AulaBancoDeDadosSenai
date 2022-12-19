@@ -76,7 +76,7 @@ references curso (id_curso);
 #### foreign key - chave estrangeira ou chave externa se refere ao tipo de relacionamento entre distintas tabelas de dados
 
 
-### UPDATE
+### UPDATE (DANGEROUS COMMAND)
 
 ~~~mysql
 update (a tabela que vai dar updat3) set (aqui você coloca a alteração) where (de onde que você quer alterar) 
@@ -88,6 +88,11 @@ exemplo:
 UPDATE pessoas SET sobrenome = "Simoes" WHERE id = 2; 
 ~~~
 
+### DELETE (DANGEROUS COMMAND)
+
+~~~mysql
+DELETE FROM
+~~~
 ## Algumas fontes para estudos:
 <hr>
 
