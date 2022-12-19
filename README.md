@@ -75,10 +75,17 @@ references curso (id_curso);
 #### Constraint – Constraint é um objeto usado com a finalidade de colocar regras referentes à integridade e à consistência nas colunas das tabelas.
 #### foreign key - chave estrangeira ou chave externa se refere ao tipo de relacionamento entre distintas tabelas de dados
 
+
 ### UPDATE
 
 ~~~mysql
 update (a tabela que vai dar updat3) set (aqui você coloca a alteração) where (de onde que você quer alterar) 
+~~~
+
+exemplo:
+
+~~~mysql
+UPDATE pessoas SET sobrenome = "Simoes" WHERE id = 2; 
 ~~~
 
 ## Algumas fontes para estudos:
