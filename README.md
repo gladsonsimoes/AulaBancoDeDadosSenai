@@ -91,7 +91,7 @@ UPDATE pessoas SET sobrenome = "Simoes" WHERE id = 2;
 ### DELETE (DANGEROUS COMMAND)
 
 ~~~mysql
-DELETE FROM pessoas WHERE pessoaid = 3 //deletar a
+DELETE FROM pessoas WHERE pessoaid = 3 -- deletar a pessoa do id 3
 ~~~
 ## Algumas fontes para estudos:
 <hr>
