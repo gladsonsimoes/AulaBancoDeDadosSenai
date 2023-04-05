@@ -69,3 +69,8 @@ comentario varchar(30),
 foreign key(id_usuario) references usuarios(id)
 );
 
+create table saldo_ini(
+id int auto_increment,
+ saldo numeric(9,2)
+);
+
