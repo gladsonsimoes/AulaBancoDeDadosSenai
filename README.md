@@ -21,11 +21,7 @@
 /* comentário 3 */
 ~~~
 
-### Criar Banco de Dados
 
-~~~mysql
-create database nomeDoBancoDeDados;
-~~~
 
 ### Acessar o banco de dados, para criar coisas dentro
 
@@ -33,37 +29,10 @@ create database nomeDoBancoDeDados;
 use nomeDoBancoDeDados;
 ~~~
 
-### Criar Tabela e adicionar atributos
 
-~~~mysql
-CREATE TABLE nomeDaTabela (
-   nomeDoAtributo varchar(20)
-);
-~~~
-<a href="https://cooperati.com.br/2012/09/mysql-srie-de-posts-3-tipos-de-dados-data-types/"> tipos de dados do atributo </a>
 
-### deixar o atributo não receber nulo
 
-~~~mysql
-create table funcionario (
-      nome_func varchar (30) not null, -- o funcionario não pode ser nulo
-      sobrenome_func varchar (50) not null -- o sobrenome não pode ser nulo
-);  
-~~~
 
-### Inserir valores na tabela
-
-~~~mysql
-INSERT INTO nomeDaTabela (nomeDoAtributo) values ("valorDoAtributo");
-~~~
-
-### Colocar chave primária em uma tabela 
-
-~~~mysql
-create table exemplo (
-  id_exemplo int auto_increment primary key
-);
-~~~
 
 ### colocar uma regra para a chave estrangeira
 
@@ -76,7 +45,78 @@ references curso (id_curso);
 #### foreign key - chave estrangeira ou chave externa se refere ao tipo de relacionamento entre distintas tabelas de dados
 
 
-### UPDATE (DANGEROUS COMMAND)
+## DANGEROUS COMMANDS
+
+<BR>
+
+### CREATE DATABASE
+
+#### 
+
+```mysql 
+
+```
+
+### Criar Banco de Dados
+
+~~~mysql
+create database if not exist nomeDoBancoDeDados;
+~~~
+
+---
+
+### INSERT INTO
+
+#### Inserir valores na tabela
+
+```mysql 
+INSERT INTO nomeDaTabela (nomeDoAtributo) values ("valorDoAtributo");
+```
+
+---
+### CREATE TABLE
+
+#### Criar Tabela e adicionar atributos
+
+~~~mysql
+CREATE TABLE nomeDaTabela (
+   nomeDoAtributo varchar(20)
+);
+~~~
+<a href="https://cooperati.com.br/2012/09/mysql-srie-de-posts-3-tipos-de-dados-data-types/"> tipos de dados do atributo </a>
+```mysql 
+
+```
+
+### Colocar chave primária em uma tabela 
+
+~~~mysql
+create table exemplo (
+  id_exemplo int auto_increment primary key
+);
+~~~
+
+### Not Null - deixar o atributo não receber nulo
+
+~~~mysql
+-- Exemplo: o nome do funcionario não pode ser nulo!
+
+create table funcionario (
+      nome_func varchar(30) not null      
+);  
+~~~
+
+---
+### ALTER TABLE
+
+```mysql 
+alter table uc add constraint fk_curso foreign key (id_curso)
+references curso (id_curso); 
+```
+
+
+---
+### UPDATE 
 
 ~~~mysql
 update (a tabela que vai dar updat3) set (aqui você coloca a alteração) where (de onde que você quer alterar) 
@@ -88,13 +128,15 @@ exemplo:
 UPDATE pessoas SET sobrenome = "Simoes" WHERE id = 2; 
 ~~~
 
-### DELETE (DANGEROUS COMMAND)
+---
+### DELETE 
 
 ~~~mysql
 DELETE FROM pessoas WHERE pessoaid = 3; -- deletar a pessoa do id 3
 ~~~
+
+---
 ## Algumas fontes para estudos:
-<hr>
 
 https://www.devmedia.com.br/sql-aprenda-a-utilizar-a-chave-primaria-e-a-chave-estrangeira/37636
 
