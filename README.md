@@ -22,7 +22,7 @@
 ~~~
 
 
-### Acessar o banco de dados, para criar coisas dentro
+### USE - Acessar o banco de dados, para criar coisas dentro
 
 ~~~mysql
 -- acessar o banco para fazer as modificações
