@@ -38,7 +38,14 @@ SELECT nome FROM usuario;
 
 -- Selecionar todos os dados da tabela de usuario
 SELECT * FROM usuario;
+
+-- Selecionar dia atual
+select date(CURRENT_TIMESTAMP()) as dia;
+
+-- Selecionar tempo atual
+select time(CURRENT_TIMESTAMP()) as tempo;
 ~~~
+
 
 
 ## WHERE
