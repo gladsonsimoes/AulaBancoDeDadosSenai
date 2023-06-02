@@ -62,7 +62,7 @@ SELECT * FROM usuario WHERE id = 1;
 SELECT u.id , u.nome , u.email , u.id_perfil, c.saldo -- abreviações das tabela e chamando seus dados
 FROM usuarios as u --tabela definida como u
 INNER JOIN conta_corrente as c --adicionar mais uma tabela e definir como c
-ON u.id = c.id; -- 
+ON u.id = c.id; -- condição_de_associação: Define um critério para avaliar duas linhas de dados que já estão associadas.
 ~~~
 
 ---
