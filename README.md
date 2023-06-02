@@ -51,7 +51,12 @@ SELECT * FROM usuario WHERE id = 1;
 ~~~
 
 ## INNER JOIN
-
+~~~mysql
+SELECT u.id , u.nome , u.email , u.id_perfil, c.saldo -- abreviações das tabela e chamando seus dados
+FROM usuarios as u --tabela definida como u
+INNER JOIN conta_corrente as c --adicionar mais uma tabela e definir como c
+ON u.id = c.id; -- 
+~~~
 
 ---
 
