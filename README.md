@@ -40,15 +40,17 @@ SELECT nome FROM usuario;
 SELECT * FROM usuario;
 
 -- Selecionar dia atual
-select CURRENT_DATE() as dia;
+SELECT CURRENT_DATE() as dia;
 
 -- Selecionar tempo atual
-select CURRENT_TIME() as tempo;
+SELECT CURRENT_TIME() as tempo;
 
 -- Mostrar dia formatado padrão (DD/MM/YYYY) 
-SELECT DATE_FORMAT(dia, "%d/%m/%Y") as dia  FROM tempo; -- pegando da tabela tempo!
+SELECT DATE_FORMAT("2017-06-15", "%d/%m/%Y") as dia;
+# %y em minusculo mostra em (YY)
+# %M em maisculo mostra o nome do mes
+# %D em maisculo mostra data em ordinal (th, rd ...)
 
-SELECT DATE_FORMAT("2017-06-15", "%d %M %Y") as dia; 
 
 -- Mostrar hora formatada padrão (24horas)
 SELECT TIME_FORMAT("20:30:10", "%T") as hora FROM relatorios;
