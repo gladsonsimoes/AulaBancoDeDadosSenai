@@ -46,9 +46,20 @@ select CURRENT_DATE() as dia;
 select CURRENT_TIME() as tempo;
 
 -- Mostrar dia formatado 
-SELECT DATE_FORMAT(dia, "%d/%m/%Y") as dia , hora FROM tempo; -- pegando da tabela tempo!
+SELECT DATE_FORMAT(dia, "%d/%m/%Y") as dia  FROM tempo; -- pegando da tabela tempo!
+
+-- Mostrar hora formatada padrão (24horas)
+SELECT TIME_FORMAT("20:30:10", "%T") as hora FROM relatorios;
+
+-- Mostrar hora formatada (AM - PM)
+SELECT TIME_FORMAT("20:30:10", "%r") as hora FROM relatorios;
+# 8 horas da manhã será 8 horas AM
+# 20 horas da noite será 8 horas PM
+
 
 ~~~
+
+
 
 
 
