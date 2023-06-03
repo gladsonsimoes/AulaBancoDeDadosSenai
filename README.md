@@ -1,12 +1,3 @@
- <div align="center">
- <h2>
-   <a href="https://github.com/gladsonsimoes/AulaBancoDeDadosSenai/blob/main/imagensReferencias/imagens.md"> imagens para referencia </a> | 
-   <a href="https://github.com/gladsonsimoes/BD_MySQL/blob/main/ScriptComAnota%C3%A7%C3%A3o.md"> SriptComAnotação </a>
- </h2>
- </div>
- 
-<br>
-
 <div>
    <h1> MYSQL <img 
     align="right"
@@ -131,12 +122,26 @@ CREATE TABLE nomeDaTabela (
 ### Inserir valores na tabela
 
 ```mysql 
+-- Inserir dados na tabela
 INSERT INTO nomeDaTabela (nomeDoAtributo) values ("valorDoAtributo");
 
--- INSERIR DIA e HORA ATUAL
+-- INSERIR DIA e HORA ATUAL (Separados)
 INSERT INTO tempo (dia , hora) values (current_date() , current_time());
 ```
 
+### Copiar dados de uma tabela insere em outra tabela]
+~~~mysql
+-- Copie todas as colunas de uma tabela para outra:
+INSERT INTO table2
+SELECT * FROM table1
+WHERE condition;
+
+-- Copie apenas algumas colunas de uma tabela para outra:
+INSERT INTO table2 (column1, column2, column3, ...)
+SELECT column1, column2, column3, ...
+FROM table1
+WHERE condition;
+~~~
 
 ---
 
