@@ -84,6 +84,20 @@ INNER JOIN conta_corrente as c --adicionar mais uma tabela e definir como c
 ON u.id = c.id; -- condição_de_associação: Define um critério para avaliar duas linhas de dados que já estão associadas.
 ~~~
 
+## LIKE
+~~~mysql
+WHERE CustomerName LIKE 'a%';	-- Localiza quaisquer valores que comecem com "a"
+WHERE CustomerName LIKE '%a'; --	Localiza quaisquer valores que terminem com "a"
+WHERE CustomerName LIKE '%or%';	-- Localiza quaisquer valores que tenham "ou" em qualquer posição
+WHERE CustomerName LIKE '_r%';	-- Localiza quaisquer valores que tenham "ou" em qualquer posição
+WHERE CustomerName LIKE 'a_%'	; -- Localiza quaisquer valores que comecem com "a" e tenham pelo menos 2 caracteres de comprimento
+WHERE CustomerName LIKE 'a__%';	-- Localiza quaisquer valores que comecem com "a" e tenham pelo menos 3 caracteres de comprimento
+WHERE ContactName LIKE 'a%o';	-- Localiza quaisquer valores que começam com "a" e terminam com "o"
+
+--Exemple
+SELECT * FROM usuarios WHERE nome LIKE 'a%';
+
+~~~
 ---
 
 # DANGEROUS COMMANDS
@@ -128,8 +142,15 @@ INSERT INTO tempo (dia , hora) values (current_date() , current_time());
 
 ### ALTER TABLE - Alterar na tabela seus tipos de dados
 ```mysql 
-alter table uc add constraint fk_curso foreign key (id_curso)
-references curso (id_curso); 
+-- Adicionar uma coluna na tabela
+ALTER TABLE table_name ADD column_name datatype;
+
+-- Alterar tipo de dado de uma coluna
+ALTER TABLE table_name MODIFY COLUMN column_name datatype;
+
+--
+ALTER TABLE table_name ADD CONSTRAINT fk_curso foreign key (id_curso) REFERENCES curso (id_curso); 
+
 ```
 
 ---
