@@ -40,10 +40,14 @@ SELECT nome FROM usuario;
 SELECT * FROM usuario;
 
 -- Selecionar dia atual
-select date(CURRENT_TIMESTAMP()) as dia;
+select CURRENT_DATE() as dia;
 
 -- Selecionar tempo atual
-select time(CURRENT_TIMESTAMP()) as tempo;
+select CURRENT_TIME() as tempo;
+
+-- Mostrar dia formatado 
+SELECT DATE_FORMAT(dia, "%d/%m/%Y") as dia , hora FROM tempo; -- pegando da tabela tempo!
+
 ~~~
 
 
@@ -97,7 +101,11 @@ CREATE TABLE nomeDaTabela (
 
 ```mysql 
 INSERT INTO nomeDaTabela (nomeDoAtributo) values ("valorDoAtributo");
+
+-- INSERIR DIA e HORA ATUAL
+INSERT INTO tempo (dia , hora) values (current_date() , current_time());
 ```
+
 
 ---
 
