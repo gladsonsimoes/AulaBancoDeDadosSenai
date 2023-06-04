@@ -1,16 +1,5 @@
-# 1 - Aula Banco de dados
- <div align="center">
-   <a href="https://github.com/gladsonsimoes/AulaBancoDeDadosSenai/blob/main/imagensReferencias/imagens.md"> imagens para referencia </a> | 
-   <a href="https://github.com/gladsonsimoes/BD_MySQL/blob/main/ScriptComAnota%C3%A7%C3%A3o.md"> SriptComAnotação </a>
- </div>
- 
-<br>
 <div>
-   <h1> MYSQL <img 
-    align="right"
-    width="50px" 
-    src="https://user-images.githubusercontent.com/99969693/202800806-e9f72f86-3528-4824-9a63-3788cad38ecf.png"></h1>
-    
+   <h1> MYSQL </h1>
 </div>
 
 
@@ -165,20 +154,33 @@ create table funcionario (
 ### colocar uma regra para a chave estrangeira
 
 ~~~mysql
-alter table uc add constraint fk_curso foreign key (id_curso)
-references curso (id_curso); 
+-- Exemplo de Definir chave estrangeira ao criar tabela 
+CREATE TABLE Carro
+(
+    ID_Carro integer PRIMARY KEY AUTOINCREMENT,
+    Nome varchar(255),
+    Marca varchar(255),
+    ID_Pessoa integer,
+    CONSTRAINT fk_PesCarro FOREIGN KEY (ID_Pessoa) REFERENCES Pessoa (ID_Pessoa)
+);
+
+-- Exemplo para definir no ALTER TABLE
+CREATE TABLE Carro
+ (
+     ID_Carro integer PRIMARY KEY AUTOINCREMENT,
+     Nome varchar(255),
+     Marca varchar(255),
+     ID_Pessoa integer,
+);
+
+
+ALTER TABLE Carro
+ ADD CONSTRAINT fk_PesCarro FOREIGN KEY (ID_Pessoa) REFERENCES Pessoa (ID_Pessoa)
 ~~~
 
 ##### Constraint é um objeto usado com a finalidade de colocar regras referentes à integridade e à consistência nas colunas das tabelas.
 
 #### foreign key - chave estrangeira ou chave externa se refere ao tipo de relacionamento entre distintas tabelas de dados
----
 
-## Algumas fontes para estudos:
-
-https://www.devmedia.com.br/sql-aprenda-a-utilizar-a-chave-primaria-e-a-chave-estrangeira/37636
-
-
-https://imasters.com.br/banco-de-dados/chave-primaria-nao-e-opcional#:~:text=Independente%20do%20cargo%20que%20voc%C3%AA,modelo%20de%20banco%20de%20dados.
 
 
