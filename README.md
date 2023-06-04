@@ -27,7 +27,33 @@ SELECT nome FROM usuario;
 
 -- Selecionar todos os dados da tabela de usuario
 SELECT * FROM usuario;
+
+-- Selecionar dia atual
+SELECT CURRENT_DATE() as dia;
+
+-- Selecionar tempo atual
+SELECT CURRENT_TIME() as tempo;
+
+-- Mostrar dia formatado padrão (DD/MM/YYYY) 
+SELECT DATE_FORMAT("2017-06-15", "%d/%m/%Y") as dia;
+# %y em minusculo mostra em (YY)
+# %M em maisculo mostra o nome do mes
+# %D em maisculo mostra data em ordinal (th, rd ...)
+
+
+-- Mostrar hora formatada padrão (24horas)
+SELECT TIME_FORMAT("20:30:10", "%T") as hora FROM relatorios;
+
+-- Mostrar hora formatada (AM - PM)
+SELECT TIME_FORMAT("20:30:10", "%r") as hora FROM relatorios;
+# 8 horas da manhã será 8 horas AM
+# 20 horas da noite será 8 horas PM
+
+
 ~~~
+
+
+
 
 
 ## WHERE
@@ -40,8 +66,27 @@ SELECT * FROM usuario WHERE id = 1;
 ~~~
 
 ## INNER JOIN
+~~~mysql
+SELECT u.id , u.nome , u.email , u.id_perfil, c.saldo -- abreviações das tabela e chamando seus dados
+FROM usuarios as u --tabela definida como u
+INNER JOIN conta_corrente as c --adicionar mais uma tabela e definir como c
+ON u.id = c.id; -- condição_de_associação: Define um critério para avaliar duas linhas de dados que já estão associadas.
+~~~
 
+## LIKE
+~~~mysql
+WHERE CustomerName LIKE 'a%';	-- Localiza quaisquer valores que comecem com "a"
+WHERE CustomerName LIKE '%a'; --	Localiza quaisquer valores que terminem com "a"
+WHERE CustomerName LIKE '%or%';	-- Localiza quaisquer valores que tenham "ou" em qualquer posição
+WHERE CustomerName LIKE '_r%';	-- Localiza quaisquer valores que tenham "ou" em qualquer posição
+WHERE CustomerName LIKE 'a_%'	; -- Localiza quaisquer valores que comecem com "a" e tenham pelo menos 2 caracteres de comprimento
+WHERE CustomerName LIKE 'a__%';	-- Localiza quaisquer valores que comecem com "a" e tenham pelo menos 3 caracteres de comprimento
+WHERE ContactName LIKE 'a%o';	-- Localiza quaisquer valores que começam com "a" e terminam com "o"
 
+--Exemple
+SELECT * FROM usuarios WHERE nome LIKE 'a%';
+
+~~~
 ---
 
 # DANGEROUS COMMANDS
@@ -73,8 +118,26 @@ CREATE TABLE nomeDaTabela (
 ### Inserir valores na tabela
 
 ```mysql 
+-- Inserir dados na tabela
 INSERT INTO nomeDaTabela (nomeDoAtributo) values ("valorDoAtributo");
+
+-- INSERIR DIA e HORA ATUAL (Separados)
+INSERT INTO tempo (dia , hora) values (current_date() , current_time());
 ```
+
+### Copiar dados de uma tabela insere em outra tabela]
+~~~mysql
+-- Copie todas as colunas de uma tabela para outra:
+INSERT INTO table2
+SELECT * FROM table1
+WHERE condition;
+
+-- Copie apenas algumas colunas de uma tabela para outra:
+INSERT INTO table2 (column1, column2, column3, ...)
+SELECT column1, column2, column3, ...
+FROM table1
+WHERE condition;
+~~~
 
 ---
 
@@ -82,8 +145,15 @@ INSERT INTO nomeDaTabela (nomeDoAtributo) values ("valorDoAtributo");
 
 ### ALTER TABLE - Alterar na tabela seus tipos de dados
 ```mysql 
-alter table uc add constraint fk_curso foreign key (id_curso)
-references curso (id_curso); 
+-- Adicionar uma coluna na tabela
+ALTER TABLE table_name ADD column_name datatype;
+
+-- Alterar tipo de dado de uma coluna
+ALTER TABLE table_name MODIFY COLUMN column_name datatype;
+
+--
+ALTER TABLE table_name ADD CONSTRAINT fk_curso foreign key (id_curso) REFERENCES curso (id_curso); 
+
 ```
 
 ---
