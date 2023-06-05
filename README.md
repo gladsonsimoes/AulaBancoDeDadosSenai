@@ -49,6 +49,8 @@ SELECT TIME_FORMAT("20:30:10", "%r") as hora FROM relatorios;
 # 8 horas da manhã será 8 horas AM
 # 20 horas da noite será 8 horas PM
 
+-- Obter o valor do ID pelo maior valor da chave primária da tabela
+SELECT MAX(id) from tabela;
 
 ~~~
 
