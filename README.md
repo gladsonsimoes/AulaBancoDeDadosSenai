@@ -144,6 +144,13 @@ SELECT  u.id_usuario , l.id
 FROM livros as l 
 INNER JOIN usuario as u 
 WHERE id = 3 and id_usuario = 1; -- condição da tabela livros e da tabela usuario (não pode ser mesmo nome tipo id = 3 and id = 1)
+
+-- Inserir valores e Copiar valores de outras tabelas:
+INSERT INTO relatorios (dia, tempo, id_livro , id_user ) 
+VALUES(current_date() , current_time() , 
+(SELECT id FROM livros WHERE id = 3) ,
+(SELECT id_usuario FROM usuario WHERE id_usuario = 1) 
+);
 ~~~
 
 ---
