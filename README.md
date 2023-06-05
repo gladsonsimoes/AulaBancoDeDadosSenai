@@ -30,13 +30,6 @@ SELECT * FROM usuario;
 
 -- Obter o valor do ID pelo maior valor da chave primária da tabela
 SELECT MAX(id) from tabela;
-
--- Obtendo o ID do último registro adicionado pelo comando INSERT INTO usando a função LAST_INSERT_ID
-INSERT INTO tabela (nome) VALUES ('Macoratti'); SELECT LAST_INSERT_ID();
-# A função LAST_INSET_ID() retorna o último registro inserido, mas deve ser executada na mesma conexão que inseriu os registros. 
-
-
-
 ~~~
 
 #### DATA E HORAS
@@ -133,6 +126,10 @@ INSERT INTO nomeDaTabela (nomeDoAtributo) values ("valorDoAtributo");
 
 -- INSERIR DIA e HORA ATUAL (Separados)
 INSERT INTO tempo (dia , hora) values (current_date() , current_time());
+
+-- Obtendo o ID do último registro adicionado pelo comando INSERT INTO usando a função LAST_INSERT_ID
+INSERT INTO tabela (nome) VALUES ('Macoratti'); SELECT LAST_INSERT_ID();
+# A função LAST_INSET_ID() retorna o último registro inserido, mas deve ser executada na mesma conexão que inseriu os registros. 
 ```
 
 ### Copiar dados de uma tabela insere em outra tabela]
