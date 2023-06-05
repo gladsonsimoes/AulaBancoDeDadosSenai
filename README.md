@@ -52,6 +52,9 @@ SELECT TIME_FORMAT("20:30:10", "%r") as hora FROM relatorios;
 -- Obter o valor do ID pelo maior valor da chave primária da tabela
 SELECT MAX(id) from tabela;
 
+-- Obtendo o ID do último registro adicionado pelo comando INSERT INTO usando a função LAST_INSERT_ID
+INSERT INTO tabela (nome) VALUES ('Macoratti'); SELECT LAST_INSERT_ID();
+# A função LAST_INSET_ID() retorna o último registro inserido, mas deve ser executada na mesma conexão que inseriu os registros. 
 ~~~
 
 
