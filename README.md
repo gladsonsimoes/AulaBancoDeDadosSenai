@@ -30,6 +30,10 @@ SELECT * FROM usuario;
 
 -- Obter o valor do ID pelo maior valor da chave primária da tabela
 SELECT MAX(id) from tabela;
+
+-- Obter o ultimo ID adicionado
+SELECT LAST_INSERT_ID();
+# A função LAST_INSET_ID() retorna o último registro inserido, mas deve ser executada na mesma conexão que inseriu os registros. 
 ~~~
 
 #### DATA E HORAS
