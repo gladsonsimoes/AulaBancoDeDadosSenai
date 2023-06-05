@@ -137,6 +137,13 @@ INSERT INTO table2 (column1, column2, column3, ...)
 SELECT column1, column2, column3, ...
 FROM table1
 WHERE condition;
+
+-- Copiar valores de duas tabelas diferentes
+INSERT INTO relatorios (id_user , id_livro) -- colunas da table 3 que vai receber
+SELECT  u.id_usuario , l.id  
+FROM livros as l 
+INNER JOIN usuario as u 
+WHERE id = 3 and id_usuario = 1; -- condição da tabela livros e da tabela usuario (não pode ser mesmo nome tipo id = 3 and id = 1)
 ~~~
 
 ---
