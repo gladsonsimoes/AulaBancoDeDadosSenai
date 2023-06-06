@@ -160,7 +160,7 @@ VALUES (
 INSERT INTO relatorios (dia, tempo, id_livro , id_user ) 
 VALUES(current_date() , current_time() , 
 (SELECT id FROM livros WHERE id = 3) ,
-(SELECT id_usuario FROM usuario WHERE id_usuario = 1) 
+(SELECT id FROM usuario WHERE id = 1) 
 );
 ~~~
 
