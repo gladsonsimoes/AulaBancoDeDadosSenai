@@ -116,13 +116,16 @@ CREATE TABLE nomeDaTabela (
    nomeDaVariavel3 bool
 );
 ~~~
+
+###### Adiconei alguns exemplos mas existem diversos tipos de dados: <a href="https://cooperati.com.br/2012/09/mysql-srie-de-posts-3-tipos-de-dados-data-types/"> tipos de dados do mysql </a>
+
 #### CREATE USER
-~~~
+~~~mysql
 CREATE USER 'username'@'host' IDENTIFIED WITH authentication_plugin BY 'password';
 ~~~
 
 
-###### Adiconei alguns exemplos mas existem diversos tipos de dados: <a href="https://cooperati.com.br/2012/09/mysql-srie-de-posts-3-tipos-de-dados-data-types/"> tipos de dados do mysql </a>
+
 
 ---
 
@@ -286,7 +289,8 @@ ALTER TABLE Carro
 ## GRANT
 
 ### Concedendo permissões a um usuário
-~~~
+
+~~~mysql
 GRANT PRIVILEGE ON database.table TO 'username'@'host';
 ~~~
 
