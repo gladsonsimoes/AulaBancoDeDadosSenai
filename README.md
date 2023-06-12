@@ -294,3 +294,5 @@ ALTER TABLE Carro
 GRANT PRIVILEGE ON database.table TO 'username'@'host';
 ~~~
 
+##### Veja <a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql"> Como criar um novo usuário e dar permissão </a>
+
