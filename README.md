@@ -185,6 +185,9 @@ ALTER TABLE table_name ADD column_name datatype;
 -- Alterar tipo de dado de uma coluna
 ALTER TABLE table_name MODIFY COLUMN column_name datatype;
 
+-- Remover Coluna (Cuidado pode perder dados)
+ALTER TABLE table_name DROP COLUMN column_name;
+
 --
 ALTER TABLE table_name ADD CONSTRAINT fk_curso foreign key (id_curso) REFERENCES curso (id_curso); 
 
